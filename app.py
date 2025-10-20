@@ -69,7 +69,7 @@ def handle_image_message(event):
     wb.save(EXCEL_FILE)
 
     # Reply to user
-    reply = f"發票號碼：{invoice_number}
+    reply = f"發票號碼：{invoice_number}"
 金額：{amount} 元"
     line_bot_api.reply_message(event.reply_token, TextSendMessage(text=reply))
 
